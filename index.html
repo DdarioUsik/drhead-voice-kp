@@ -430,25 +430,37 @@ section{padding:64px 0}
     <div class="phase-card" style="border-left:3px solid var(--green)">
       <div class="phase-top">
         <div class="phase-left">
-          <div class="phase-num">Сопровождение · 3 месяца</div>
-          <div class="phase-name">Период донастройки</div>
+          <div class="phase-num">Ежемесячно · 3 месяца</div>
+          <div class="phase-name">Сопровождение и управление</div>
         </div>
         <div class="phase-price-block">
           <span class="phase-badge badge-green">Апрель — Июнь</span>
           <div class="phase-price">100 000 ₽<span>/мес</span></div>
-          <div class="phase-timeline">× 3 месяца · всё включено</div>
+          <div class="phase-timeline">× 3 месяца</div>
         </div>
       </div>
-      <ul class="phase-deliverables">
-        <li>Сервер и инфраструктура агента</li>
-        <li>AI-токены (голос, LLM) — без лимитов</li>
-        <li>Мониторинг и обучение модели</li>
-        <li>5 ч доработок флоу в месяц</li>
-        <li>Эскалация и передача под ваши сценарии</li>
-        <li>Поддержка работоспособности 24/7</li>
-      </ul>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+        <div style="background:rgba(16,185,129,0.05);border:1px solid rgba(16,185,129,0.15);border-radius:10px;padding:16px">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:10px">Техническое сопровождение</div>
+          <ul style="list-style:none;font-size:13px;color:var(--subtle);display:flex;flex-direction:column;gap:7px">
+            <li>✓ Мониторинг работы агента 24/7</li>
+            <li>✓ Обучение модели на реальных звонках</li>
+            <li>✓ 5 ч доработок флоу в месяц</li>
+            <li>✓ Эскалация и передача под ваши сценарии</li>
+          </ul>
+        </div>
+        <div style="background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.15);border-radius:10px;padding:16px">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:10px">Стратегическое управление</div>
+          <ul style="list-style:none;font-size:13px;color:var(--subtle);display:flex;flex-direction:column;gap:7px">
+            <li>✓ 20 ч/мес работы с командой</li>
+            <li>✓ Прояснение целей и задач</li>
+            <li>✓ Видение развития системы</li>
+            <li>✓ Управление проектом и приоритетами</li>
+          </ul>
+        </div>
+      </div>
       <div class="phase-note">
-        <strong>Что это значит для вас:</strong> вы платите одну фиксированную сумму — и больше ни о чём не думаете. Сервер, токены, обновления — на нас. Никаких счетов от провайдеров, никакого DevOps.
+        <strong>Что это значит:</strong> один платёж покрывает и техническую донастройку агента, и стратегическое сопровождение — чтобы система развивалась в нужную сторону, а не просто работала.
       </div>
     </div>
 
@@ -469,27 +481,28 @@ section{padding:64px 0}
 
 <div class="divider"></div>
 
-<!-- ALL-IN -->
+<!-- OPEX -->
 <section>
   <div class="container">
-    <div class="s-label">Что входит в ежемесячный платёж</div>
-    <h2 class="s-title">Один счёт. Никаких сюрпризов.</h2>
-    <p class="s-sub">100 000 ₽/мес — это фиксированная сумма за всё. Вы не получаете отдельные счета от провайдеров и не занимаетесь инфраструктурой.</p>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px">
-        <div style="font-size:22px;margin-bottom:10px">🖥️</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px">Сервер и инфраструктура</div>
-        <div style="font-size:12px;color:var(--subtle);line-height:1.6">Всё развёрнуто на нашей стороне. Вы не занимаетесь DevOps, обновлениями и мониторингом серверов.</div>
+    <div class="s-label">Операционные расходы</div>
+    <h2 class="s-title">Прозрачно: что сверху</h2>
+    <p class="s-sub">Помимо ежемесячного платежа есть два операционных расхода. Мы говорим о них заранее — никаких сюрпризов в процессе.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div style="background:var(--card);border:1px solid rgba(245,158,11,0.3);border-radius:var(--radius);padding:24px">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--amber);margin-bottom:12px">AI-токены · голос</div>
+        <div style="font-size:28px;font-weight:900;color:var(--amber);margin-bottom:6px">$0.20 <span style="font-size:14px;font-weight:500;color:var(--muted)">/ мин разговора</span></div>
+        <div style="font-size:13px;color:var(--subtle);line-height:1.65;margin-bottom:12px">Списывается только время речи агента — не всего звонка. Обычно это 40–60% продолжительности разговора.</div>
+        <div style="background:rgba(245,158,11,0.07);border-radius:8px;padding:12px;font-size:12px;color:var(--subtle)">
+          Пример: 800 зв/мес × 3 мин × 50% = 1 200 мин → <strong style="color:var(--text)">~$240/мес</strong>
+        </div>
       </div>
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px">
-        <div style="font-size:22px;margin-bottom:10px">🎙️</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px">AI-токены и голос</div>
-        <div style="font-size:12px;color:var(--subtle);line-height:1.6">Стоимость TTS/STT и LLM-запросов включена. Разговоры агента не тарифицируются отдельно для вас.</div>
-      </div>
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px">
-        <div style="font-size:22px;margin-bottom:10px">🔧</div>
-        <div style="font-size:14px;font-weight:700;margin-bottom:6px">Сопровождение</div>
-        <div style="font-size:12px;color:var(--subtle);line-height:1.6">Мониторинг, обучение модели на реальных звонках, 5 ч доработок в месяц. Всё в одном платеже.</div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px">Серверная инфраструктура</div>
+        <div style="font-size:22px;font-weight:900;color:var(--subtle);margin-bottom:6px">Уточняется</div>
+        <div style="font-size:13px;color:var(--subtle);line-height:1.65;margin-bottom:12px">Обсуждаем: размещение на нашей стороне или на вашем сервере. Стоимость — по итогу выбора варианта.</div>
+        <div style="background:rgba(255,255,255,0.03);border-radius:8px;padding:12px;font-size:12px;color:var(--muted)">
+          Вопрос открытый — зафиксируем до подписания договора
+        </div>
       </div>
     </div>
   </div>
