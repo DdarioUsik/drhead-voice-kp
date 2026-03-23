@@ -430,23 +430,25 @@ section{padding:64px 0}
     <div class="phase-card" style="border-left:3px solid var(--green)">
       <div class="phase-top">
         <div class="phase-left">
-          <div class="phase-num">Включено · 3 месяца</div>
+          <div class="phase-num">Сопровождение · 3 месяца</div>
           <div class="phase-name">Период донастройки</div>
         </div>
         <div class="phase-price-block">
           <span class="phase-badge badge-green">Апрель — Июнь</span>
           <div class="phase-price">100 000 ₽<span>/мес</span></div>
-          <div class="phase-timeline">× 3 месяца</div>
+          <div class="phase-timeline">× 3 месяца · всё включено</div>
         </div>
       </div>
       <ul class="phase-deliverables">
-        <li>Мониторинг качества разговоров</li>
-        <li>Обучение модели на реальных звонках</li>
-        <li>5 часов доработок флоу в месяц</li>
-        <li>Эскалация и передача — под ваши сценарии</li>
+        <li>Сервер и инфраструктура агента</li>
+        <li>AI-токены (голос, LLM) — без лимитов</li>
+        <li>Мониторинг и обучение модели</li>
+        <li>5 ч доработок флоу в месяц</li>
+        <li>Эскалация и передача под ваши сценарии</li>
+        <li>Поддержка работоспособности 24/7</li>
       </ul>
       <div class="phase-note">
-        <strong>Почему важно:</strong> первые 3 месяца — самые ценные. Именно тогда выясняется, какие вопросы задают реальные клиенты. Мы рядом — докручиваем под живую нагрузку. Входите в горячий сезон с агентом, который уже знает ваших клиентов.
+        <strong>Что это значит для вас:</strong> вы платите одну фиксированную сумму — и больше ни о чём не думаете. Сервер, токены, обновления — на нас. Никаких счетов от провайдеров, никакого DevOps.
       </div>
     </div>
 
@@ -467,29 +469,29 @@ section{padding:64px 0}
 
 <div class="divider"></div>
 
-<!-- OPEX -->
+<!-- ALL-IN -->
 <section>
   <div class="container">
-    <div class="s-label">Операционные расходы</div>
-    <h2 class="s-title">Инфраструктура — ваша, прозрачная</h2>
-    <p class="s-sub">Вы платите провайдерам напрямую. Без наценок с нашей стороны. Списывается только когда агент реально говорит.</p>
-    <div class="opex-grid">
-      <div class="opex-card">
-        <div class="opex-card-title">Голосовой агент</div>
-        <div class="opex-row"><span class="opex-row-key">Речь (TTS+STT)</span><span class="opex-row-val">$0.13 / мин</span></div>
-        <div class="opex-row"><span class="opex-row-key">Списывается</span><span class="opex-row-val">только речь агента</span></div>
-        <div class="opex-row"><span class="opex-row-key">~40–60% звонка</span><span class="opex-row-val">остальное — клиент</span></div>
-        <div class="opex-row"><span class="opex-row-key">LLM токены</span><span class="opex-row-val">$0.015 / 1k</span></div>
+    <div class="s-label">Что входит в ежемесячный платёж</div>
+    <h2 class="s-title">Один счёт. Никаких сюрпризов.</h2>
+    <p class="s-sub">100 000 ₽/мес — это фиксированная сумма за всё. Вы не получаете отдельные счета от провайдеров и не занимаетесь инфраструктурой.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🖥️</div>
+        <div style="font-size:14px;font-weight:700;margin-bottom:6px">Сервер и инфраструктура</div>
+        <div style="font-size:12px;color:var(--subtle);line-height:1.6">Всё развёрнуто на нашей стороне. Вы не занимаетесь DevOps, обновлениями и мониторингом серверов.</div>
       </div>
-      <div class="opex-card">
-        <div class="opex-card-title">Пример: 800 звонков/мес × 3 мин</div>
-        <div class="opex-row"><span class="opex-row-key">Мин. речи агента</span><span class="opex-row-val">~1 200 мин</span></div>
-        <div class="opex-row"><span class="opex-row-key">Стоимость речи</span><span class="opex-row-val">~$156</span></div>
-        <div class="opex-row"><span class="opex-row-key">Токены</span><span class="opex-row-val">~$18</span></div>
-        <div class="opex-row"><span class="opex-row-key">Итого OPEX</span><span class="opex-row-val" style="color:var(--amber)">~$174 / мес</span></div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🎙️</div>
+        <div style="font-size:14px;font-weight:700;margin-bottom:6px">AI-токены и голос</div>
+        <div style="font-size:12px;color:var(--subtle);line-height:1.6">Стоимость TTS/STT и LLM-запросов включена. Разговоры агента не тарифицируются отдельно для вас.</div>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🔧</div>
+        <div style="font-size:14px;font-weight:700;margin-bottom:6px">Сопровождение</div>
+        <div style="font-size:12px;color:var(--subtle);line-height:1.6">Мониторинг, обучение модели на реальных звонках, 5 ч доработок в месяц. Всё в одном платеже.</div>
       </div>
     </div>
-    <div class="opex-note">Это ориентир. Реальный OPEX зависит от объёма звонков, которые принимает агент (не все звонки — он берёт overflow и нерабочее время). Покажем точный расчёт после первых 2 недель работы.</div>
   </div>
 </section>
 
@@ -601,15 +603,15 @@ section{padding:64px 0}
     <div class="terms-grid">
       <div class="terms-item">
         <div class="terms-label">Оплата</div>
-        <div class="terms-value">50% предоплата до старта · 50% после сдачи голосового агента · Поддержка 100 000 ₽/мес ежемесячно</div>
+        <div class="terms-value">50% предоплата до старта · 50% после сдачи голосового агента · Сопровождение 100 000 ₽/мес ежемесячно</div>
       </div>
       <div class="terms-item">
-        <div class="terms-label">Курс</div>
-        <div class="terms-value">Цены зафиксированы в рублях. OPEX провайдеров оплачивается в USD напрямую.</div>
+        <div class="terms-label">Юридическое лицо</div>
+        <div class="terms-value">ООО, система налогообложения УСН 6%. Договор + закрывающие документы по каждому платежу.</div>
       </div>
       <div class="terms-item">
         <div class="terms-label">Инфраструктура</div>
-        <div class="terms-value">Сервер, Mango API, AI-провайдеры — на нашей стороне. Вы платите только за потреблённые ресурсы напрямую.</div>
+        <div class="terms-value">Сервер, AI-токены, голосовые провайдеры — на нашей стороне, включены в ежемесячный платёж. Никаких дополнительных счетов.</div>
       </div>
       <div class="terms-item">
         <div class="terms-label">NDA</div>
@@ -633,8 +635,7 @@ section{padding:64px 0}
 <section>
   <div class="container">
     <div class="s-label">Кто делает</div>
-    <h2 class="s-title">Работаете напрямую с командой</h2>
-    <p class="s-sub">Никаких аккаунт-менеджеров и посредников. Данил ведёт проект, Света строит систему.</p>
+    <h2 class="s-title">Команда</h2>
     <div class="team-grid">
       <div class="team-card">
         <div class="team-avatar">D</div>
